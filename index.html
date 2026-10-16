@@ -32,49 +32,50 @@
     <style>
 
         :root {
-            --bg: #f7f7f4;
+            --bg: #f5f7fb;
             --surface: #ffffff;
-            --surface-soft: #f0f0ec;
+            --surface-soft: #e9eef6;
 
-            --text: #171715;
-            --text-soft: #43433f;
-            --muted: #74746e;
-            --faint: #9b9b94;
+            --text: #0b0f19;
+            --text-soft: #2d3748;
+            --muted: #64748b;
+            --faint: #94a3b8;
 
-            --border: #ddddD7;
-            --border-strong: #c8c8c0;
+            --border: #dbe4ef;
+            --border-strong: #cbd5e1;
 
-            --accent: #e85d20;
-            --accent-soft: #fff0e9;
+            --accent: #4f46e5;
+            --accent-soft: rgba(79, 70, 229, 0.08);
 
-            --green: #16a36a;
+            --cyan: #06b6d4;
+            --green: #10b981;
 
-            --nav-bg: rgba(247, 247, 244, 0.86);
+            --nav-bg: rgba(245, 247, 251, 0.88);
 
-            --glass: rgba(255, 255, 255, 0.5);
-            --glass-strong: rgba(255, 255, 255, 0.7);
-            --glass-soft: rgba(255, 255, 255, 0.28);
-            --glass-border: rgba(255, 255, 255, 0.78);
-            --glass-highlight: rgba(255, 255, 255, 0.9);
+            --glass: rgba(255, 255, 255, 0.68);
+            --glass-strong: rgba(255, 255, 255, 0.88);
+            --glass-soft: rgba(255, 255, 255, 0.42);
+            --glass-border: rgba(99, 102, 241, 0.16);
+            --glass-highlight: rgba(255, 255, 255, 0.98);
             --glass-shadow:
-                0 24px 80px rgba(55, 41, 27, 0.1),
-                inset 0 1px 0 rgba(255, 255, 255, 0.82),
-                inset 0 -1px 0 rgba(255, 255, 255, 0.24);
+                0 24px 80px rgba(15, 23, 42, 0.07),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9),
+                inset 0 -1px 0 rgba(79, 70, 229, 0.05);
 
-            --aurora-one: rgba(255, 117, 64, 0.24);
-            --aurora-two: rgba(95, 190, 255, 0.2);
-            --aurora-three: rgba(168, 118, 255, 0.17);
+            --aurora-one: rgba(6, 182, 212, 0.18);
+            --aurora-two: rgba(99, 102, 241, 0.22);
+            --aurora-three: rgba(168, 85, 247, 0.16);
 
             --pointer-x: 50vw;
             --pointer-y: 30vh;
             --scroll-progress: 0;
 
             --shadow-small:
-                0 1px 2px rgba(0, 0, 0, 0.03),
-                0 6px 18px rgba(0, 0, 0, 0.025);
+                0 1px 3px rgba(15, 23, 42, 0.04),
+                0 8px 24px rgba(15, 23, 42, 0.04);
 
             --shadow-medium:
-                0 20px 50px rgba(0, 0, 0, 0.08);
+                0 24px 60px rgba(15, 23, 42, 0.09);
 
             --radius-sm: 10px;
             --radius-md: 14px;
@@ -87,43 +88,46 @@
         }
 
         html.dark {
-            --bg: #111110;
-            --surface: #191918;
-            --surface-soft: #21211f;
+            --bg: #07090e;
+            --surface: #0e121c;
+            --surface-soft: #151a26;
 
-            --text: #f4f4f0;
-            --text-soft: #cecec8;
-            --muted: #96968f;
-            --faint: #73736c;
+            --text: #f8fafc;
+            --text-soft: #cbd5e1;
+            --muted: #8896ab;
+            --faint: #526077;
 
-            --border: #30302d;
-            --border-strong: #454540;
+            --border: rgba(99, 102, 241, 0.18);
+            --border-strong: rgba(99, 102, 241, 0.35);
 
-            --accent: #ff7b42;
-            --accent-soft: rgba(255, 123, 66, 0.09);
+            --accent: #6366f1;
+            --accent-soft: rgba(99, 102, 241, 0.14);
 
-            --nav-bg: rgba(17, 17, 16, 0.88);
+            --cyan: #22d3ee;
+            --green: #10b981;
 
-            --glass: rgba(24, 24, 27, 0.52);
-            --glass-strong: rgba(30, 30, 34, 0.72);
-            --glass-soft: rgba(255, 255, 255, 0.045);
-            --glass-border: rgba(255, 255, 255, 0.13);
-            --glass-highlight: rgba(255, 255, 255, 0.1);
+            --nav-bg: rgba(7, 9, 14, 0.88);
+
+            --glass: rgba(14, 18, 28, 0.62);
+            --glass-strong: rgba(20, 26, 40, 0.82);
+            --glass-soft: rgba(255, 255, 255, 0.035);
+            --glass-border: rgba(99, 102, 241, 0.24);
+            --glass-highlight: rgba(255, 255, 255, 0.14);
             --glass-shadow:
-                0 30px 90px rgba(0, 0, 0, 0.42),
-                inset 0 1px 0 rgba(255, 255, 255, 0.12),
-                inset 0 -1px 0 rgba(255, 255, 255, 0.035);
+                0 32px 90px rgba(0, 0, 0, 0.65),
+                inset 0 1px 0 rgba(255, 255, 255, 0.16),
+                inset 0 -1px 0 rgba(99, 102, 241, 0.12);
 
-            --aurora-one: rgba(255, 103, 45, 0.21);
-            --aurora-two: rgba(48, 145, 255, 0.16);
-            --aurora-three: rgba(142, 84, 255, 0.16);
+            --aurora-one: rgba(34, 211, 238, 0.18);
+            --aurora-two: rgba(99, 102, 241, 0.24);
+            --aurora-three: rgba(168, 85, 247, 0.18);
 
             --shadow-small:
-                0 1px 2px rgba(0, 0, 0, 0.2),
-                0 8px 24px rgba(0, 0, 0, 0.12);
+                0 2px 4px rgba(0, 0, 0, 0.3),
+                0 10px 30px rgba(0, 0, 0, 0.22);
 
             --shadow-medium:
-                0 24px 60px rgba(0, 0, 0, 0.35);
+                0 30px 70px rgba(0, 0, 0, 0.5);
 
             color-scheme: dark;
         }
@@ -145,8 +149,13 @@
             background:
                 radial-gradient(
                     circle at 80% -10%,
-                    rgba(232, 93, 32, 0.05),
-                    transparent 28rem
+                    rgba(99, 102, 241, 0.08),
+                    transparent 36rem
+                ),
+                radial-gradient(
+                    circle at 10% 30%,
+                    rgba(6, 182, 212, 0.06),
+                    transparent 30rem
                 ),
                 var(--bg);
 
@@ -204,7 +213,7 @@
         }
 
         :focus-visible {
-            outline: 3px solid rgba(232, 93, 32, 0.3);
+            outline: 3px solid rgba(99, 102, 241, 0.4);
             outline-offset: 3px;
         }
 
@@ -1946,12 +1955,12 @@
             background:
                 linear-gradient(
                     90deg,
+                    var(--cyan),
                     var(--accent),
-                    #ffb36b,
-                    #7bbcff
+                    #a855f7
                 );
 
-            box-shadow: 0 0 14px color-mix(in srgb, var(--accent) 55%, transparent);
+            box-shadow: 0 0 16px rgba(99, 102, 241, 0.65);
         }
 
         main,
@@ -2155,10 +2164,23 @@
         .btn-primary {
             background:
                 linear-gradient(
-                    145deg,
-                    color-mix(in srgb, var(--text) 92%, #5b5b5b),
-                    var(--text)
+                    135deg,
+                    #4f46e5 0%,
+                    #3b82f6 50%,
+                    #06b6d4 100%
                 );
+            color: #ffffff !important;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow:
+                0 12px 30px rgba(79, 70, 229, 0.35),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-primary:hover {
+            box-shadow:
+                0 16px 38px rgba(79, 70, 229, 0.48),
+                inset 0 1px 0 rgba(255, 255, 255, 0.55);
+            filter: brightness(1.06);
         }
 
         .btn-secondary,
@@ -2169,7 +2191,7 @@
 
             box-shadow:
                 inset 0 1px 0 var(--glass-highlight),
-                0 8px 22px rgba(30, 24, 18, 0.06);
+                0 8px 22px rgba(15, 23, 42, 0.06);
 
             backdrop-filter: blur(18px) saturate(160%);
             -webkit-backdrop-filter: blur(18px) saturate(160%);
@@ -2179,14 +2201,14 @@
             background:
                 linear-gradient(
                     135deg,
-                    #ff884f,
-                    var(--accent) 55%,
-                    #d94b12
+                    #6366f1 0%,
+                    #06b6d4 100%
                 );
-
+            color: #ffffff !important;
+            border: 1px solid rgba(255, 255, 255, 0.25);
             box-shadow:
                 inset 0 1px 0 rgba(255, 255, 255, 0.35),
-                0 14px 34px color-mix(in srgb, var(--accent) 24%, transparent);
+                0 14px 34px rgba(99, 102, 241, 0.35);
         }
 
         .btn-icon {
@@ -2276,9 +2298,9 @@
             background:
                 linear-gradient(
                     110deg,
-                    var(--muted) 5%,
+                    var(--cyan) 0%,
                     var(--accent) 48%,
-                    #7b8cff 92%
+                    #a855f7 96%
                 );
 
             background-size: 180% 100%;
@@ -2612,12 +2634,12 @@
             background:
                 linear-gradient(
                     to bottom,
-                    #ffad7a,
+                    var(--cyan),
                     var(--accent),
-                    #8a74ff
+                    #a855f7
                 );
 
-            box-shadow: 0 0 30px color-mix(in srgb, var(--accent) 30%, transparent);
+            box-shadow: 0 0 30px rgba(99, 102, 241, 0.45);
         }
 
         .library-status {
@@ -2697,6 +2719,624 @@
             background: var(--aurora-one);
 
             filter: blur(35px);
+        }
+
+        /* =========================================================
+           XuzoBot Ecosystem Section Styles
+           ========================================================= */
+        .xuzobot-section {
+            padding-block: 96px;
+            position: relative;
+        }
+
+        .xuzobot-card {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: clamp(32px, 5vw, 56px);
+            border: 1px solid var(--glass-border);
+            border-radius: 34px;
+            background:
+                radial-gradient(
+                    circle at 92% 10%,
+                    color-mix(in srgb, #229ED9 14%, transparent),
+                    transparent 24rem
+                ),
+                radial-gradient(
+                    circle at 5% 90%,
+                    var(--accent-soft),
+                    transparent 20rem
+                ),
+                var(--glass);
+            box-shadow:
+                0 30px 90px rgba(0, 0, 0, 0.08),
+                inset 0 1px 0 var(--glass-highlight);
+            backdrop-filter: blur(28px) saturate(180%);
+            -webkit-backdrop-filter: blur(28px) saturate(180%);
+            transition:
+                transform 0.28s cubic-bezier(0.2, 0.9, 0.3, 1),
+                box-shadow 0.28s ease,
+                border-color 0.28s ease;
+        }
+
+        .xuzobot-card::before {
+            content: "";
+            position: absolute;
+            inset: 0 auto 0 0;
+            width: 5px;
+            background: linear-gradient(to bottom, #229ED9, #0088cc, var(--accent));
+            box-shadow: 0 0 25px rgba(34, 158, 217, 0.45);
+        }
+
+        .xuzobot-showcase {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 32px;
+            padding-bottom: 36px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .xuzobot-avatar-wrap {
+            position: relative;
+            width: 104px;
+            height: 104px;
+            flex-shrink: 0;
+        }
+
+        .xuzobot-avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 26px;
+            object-fit: cover;
+            border: 2px solid var(--glass-border);
+            box-shadow:
+                0 14px 34px rgba(0, 0, 0, 0.14),
+                inset 0 1px 0 var(--glass-highlight);
+            transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+            display: block;
+        }
+
+        .xuzobot-card:hover .xuzobot-avatar {
+            transform: scale(1.05) rotate(-2deg);
+        }
+
+        .xuzobot-avatar-wrap .bot-online {
+            position: absolute;
+            bottom: -6px;
+            right: -6px;
+            padding: 3px 9px;
+            font-size: 11px;
+            background: var(--surface);
+            border: 1px solid var(--glass-border);
+            border-radius: 999px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .xuzobot-info {
+            min-width: 0;
+        }
+
+        .xuzobot-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 10px;
+            border: 1px solid var(--glass-border);
+            border-radius: 999px;
+            background: var(--glass-soft);
+            color: #229ED9;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .xuzobot-name {
+            margin: 0;
+            font-size: clamp(26px, 3.8vw, 36px);
+            line-height: 1.1;
+            letter-spacing: -0.04em;
+            font-weight: 700;
+        }
+
+        .xuzobot-handle {
+            margin: 4px 0 10px;
+            color: #229ED9;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        .xuzobot-tagline {
+            margin: 0;
+            color: var(--muted);
+            font-size: 14.5px;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        .xuzobot-action {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .xuzobot-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 24px;
+            border-radius: 14px;
+            font-weight: 600;
+            font-size: 14.5px;
+            text-decoration: none;
+            background: linear-gradient(135deg, #229ED9 0%, #0088cc 100%);
+            color: #ffffff !important;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow:
+                0 12px 30px rgba(34, 158, 217, 0.35),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            transition:
+                transform 0.22s ease,
+                box-shadow 0.22s ease,
+                filter 0.22s ease;
+        }
+
+        .xuzobot-btn:hover {
+            transform: translateY(-2px);
+            box-shadow:
+                0 18px 40px rgba(34, 158, 217, 0.5),
+                inset 0 1px 0 rgba(255, 255, 255, 0.5);
+            filter: brightness(1.06);
+        }
+
+        .xuzobot-link-note {
+            font-size: 12px;
+            color: var(--faint);
+            letter-spacing: -0.01em;
+        }
+
+        .xuzobot-details-header {
+            margin-bottom: 28px;
+        }
+
+        .xuzobot-details-header h4 {
+            margin: 0 0 8px;
+            font-size: 20px;
+            letter-spacing: -0.03em;
+            color: var(--text);
+        }
+
+        .xuzobot-details-header p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 14.5px;
+            line-height: 1.7;
+            max-width: 760px;
+        }
+
+        .xuzobot-features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .xuzobot-feature-item {
+            display: flex;
+            gap: 16px;
+            padding: 22px;
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            background: var(--glass-soft);
+            transition:
+                transform 0.25s ease,
+                background-color 0.25s ease,
+                border-color 0.25s ease;
+        }
+
+        .xuzobot-feature-item:hover {
+            transform: translateY(-3px);
+            background: var(--glass);
+            border-color: rgba(34, 158, 217, 0.35);
+        }
+
+        .xuzobot-feature-item h5 {
+            margin: 0 0 6px;
+            font-size: 16px;
+            letter-spacing: -0.02em;
+            color: var(--text);
+        }
+
+        .xuzobot-feature-item p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 13.5px;
+            line-height: 1.65;
+        }
+
+        @media (max-width: 920px) {
+            .xuzobot-showcase {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .xuzobot-action {
+                align-items: flex-start;
+                width: 100%;
+            }
+
+            .xuzobot-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .xuzobot-features-grid {
+                grid-template-columns: 1fr;
+                gap: 14px;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .xuzobot-section {
+                padding-block: 64px;
+            }
+
+            .xuzobot-card {
+                border-radius: 26px;
+                padding: 24px;
+            }
+
+            .xuzobot-avatar-wrap {
+                width: 88px;
+                height: 88px;
+            }
+        }
+
+        /* =========================================================
+           Owner Profile & Section Styles (Radit "xso")
+           ========================================================= */
+        .owner-section {
+            padding-block: 96px;
+            position: relative;
+        }
+
+        .owner-card {
+            position: relative;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+            gap: 40px;
+            padding: clamp(32px, 5vw, 54px);
+            border: 1px solid var(--glass-border);
+            border-radius: 34px;
+            background:
+                radial-gradient(
+                    circle at 8% 8%,
+                    color-mix(in srgb, var(--accent) 15%, transparent),
+                    transparent 22rem
+                ),
+                radial-gradient(
+                    circle at 95% 90%,
+                    color-mix(in srgb, var(--cyan) 14%, transparent),
+                    transparent 24rem
+                ),
+                var(--glass);
+            box-shadow: var(--glass-shadow);
+            backdrop-filter: blur(28px) saturate(180%);
+            -webkit-backdrop-filter: blur(28px) saturate(180%);
+            transition:
+                transform 0.28s cubic-bezier(0.2, 0.9, 0.3, 1),
+                box-shadow 0.28s ease,
+                border-color 0.28s ease;
+        }
+
+        .owner-card::before {
+            content: "";
+            position: absolute;
+            inset: 0 auto 0 0;
+            width: 5px;
+            background: linear-gradient(to bottom, var(--cyan), var(--accent), #a855f7);
+            box-shadow: 0 0 25px rgba(99, 102, 241, 0.45);
+        }
+
+        .owner-profile-card {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding-right: 32px;
+            border-right: 1px solid var(--glass-border);
+        }
+
+        .owner-avatar-wrapper {
+            position: relative;
+            width: 110px;
+            height: 110px;
+        }
+
+        .owner-avatar-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 28px;
+            object-fit: cover;
+            border: 2px solid var(--glass-border);
+            box-shadow:
+                0 16px 36px rgba(0, 0, 0, 0.16),
+                inset 0 1px 0 var(--glass-highlight);
+            transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+            display: block;
+        }
+
+        .owner-card:hover .owner-avatar-img {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .owner-avatar-wrapper .owner-online {
+            position: absolute;
+            bottom: -6px;
+            right: -6px;
+            padding: 3px 10px;
+            font-size: 11px;
+            background: var(--surface);
+            border: 1px solid var(--glass-border);
+            border-radius: 999px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        .owner-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 12px;
+            border: 1px solid var(--glass-border);
+            border-radius: 999px;
+            background: var(--glass-soft);
+            color: var(--accent);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .owner-display-name {
+            margin: 0;
+            font-size: clamp(28px, 4vw, 38px);
+            line-height: 1.1;
+            letter-spacing: -0.04em;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .owner-alias-tag {
+            display: inline-block;
+            font-size: 18px;
+            padding: 2px 8px;
+            margin-left: 6px;
+            border-radius: 8px;
+            background: var(--accent-soft);
+            color: var(--cyan);
+            border: 1px solid var(--glass-border);
+            vertical-align: middle;
+        }
+
+        .owner-tg-handle {
+            margin: 6px 0 12px;
+            color: var(--cyan);
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        .owner-tagline {
+            margin: 0;
+            color: var(--muted);
+            font-size: 14.5px;
+            line-height: 1.65;
+        }
+
+        .owner-action-box {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .owner-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 24px;
+            border-radius: 14px;
+            font-weight: 600;
+            font-size: 14.5px;
+            text-decoration: none;
+            background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 50%, #06b6d4 100%);
+            color: #ffffff !important;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow:
+                0 12px 30px rgba(79, 70, 229, 0.35),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            transition:
+                transform 0.22s ease,
+                box-shadow 0.22s ease,
+                filter 0.22s ease;
+        }
+
+        .owner-btn:hover {
+            transform: translateY(-2px);
+            box-shadow:
+                0 18px 40px rgba(79, 70, 229, 0.5),
+                inset 0 1px 0 rgba(255, 255, 255, 0.5);
+            filter: brightness(1.06);
+        }
+
+        .owner-link-note {
+            font-size: 12px;
+            color: var(--faint);
+            letter-spacing: -0.01em;
+        }
+
+        .owner-details-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            justify-content: center;
+        }
+
+        .owner-focus-card {
+            display: flex;
+            gap: 18px;
+            padding: 20px 22px;
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            background: var(--glass-soft);
+            transition:
+                transform 0.25s ease,
+                background-color 0.25s ease,
+                border-color 0.25s ease;
+        }
+
+        .owner-focus-card:hover {
+            transform: translateY(-3px) translateX(4px);
+            background: var(--glass);
+            border-color: rgba(99, 102, 241, 0.35);
+        }
+
+        .owner-focus-card h4 {
+            margin: 0 0 6px;
+            font-size: 16px;
+            letter-spacing: -0.02em;
+            color: var(--text);
+        }
+
+        .owner-focus-card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 13.5px;
+            line-height: 1.65;
+        }
+
+        /* Hero Profile Panel enhancements for Radit */
+        .owner-pill-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 3px 8px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            border: 1px solid var(--glass-border);
+            margin-bottom: 4px;
+        }
+
+        .profile-alias {
+            display: inline-block;
+            font-size: 13px;
+            padding: 1px 5px;
+            border-radius: 6px;
+            background: var(--glass-soft);
+            color: var(--cyan);
+            border: 1px solid var(--glass-border);
+            margin-left: 4px;
+        }
+
+        .owner-direct-button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 12px 14px;
+            margin-top: 14px;
+            border-radius: 14px;
+            border: 1px solid var(--glass-border);
+            background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 12%, transparent), color-mix(in srgb, var(--cyan) 10%, transparent));
+            color: var(--text);
+            text-decoration: none;
+            transition:
+                transform 0.2s ease,
+                background 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+        .owner-direct-button:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+            background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 20%, transparent), color-mix(in srgb, var(--cyan) 18%, transparent));
+        }
+
+        .owner-direct-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            background: var(--surface);
+            color: var(--cyan);
+            flex-shrink: 0;
+            border: 1px solid var(--glass-border);
+        }
+
+        .owner-direct-text {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            flex: 1;
+        }
+
+        .owner-direct-text strong {
+            font-size: 13px;
+            line-height: 1.3;
+            color: var(--text);
+        }
+
+        .owner-direct-text small {
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        @media (max-width: 920px) {
+            .owner-card {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .owner-profile-card {
+                padding-right: 0;
+                border-right: 0;
+                border-bottom: 1px solid var(--glass-border);
+                padding-bottom: 32px;
+            }
+
+            .owner-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .owner-section {
+                padding-block: 64px;
+            }
+
+            .owner-card {
+                border-radius: 26px;
+                padding: 24px;
+            }
+
+            .owner-avatar-wrapper {
+                width: 90px;
+                height: 90px;
+            }
         }
 
         footer {
@@ -2975,6 +3615,8 @@
             .profile-panel,
             .prompt-library-card,
             .home-cta-card,
+            .xuzobot-card,
+            .owner-card,
             .about-section .about-grid {
                 border-radius: 26px;
             }
@@ -3040,6 +3682,14 @@
                 padding: 30px 22px;
             }
 
+            .xuzobot-card {
+                padding: 24px 18px;
+            }
+
+            .owner-card {
+                padding: 24px 18px;
+            }
+
             .home-cta-card {
                 padding: 30px 24px;
             }
@@ -3064,6 +3714,10 @@
             .about-section .about-grid,
             .prompt-library-card,
             .home-cta-card,
+            .xuzobot-card,
+            .xuzobot-feature-item,
+            .owner-card,
+            .owner-focus-card,
             .education-sidebar,
             .note,
             .education-code,
@@ -3305,9 +3959,9 @@
 
                             <button
                                 class="btn btn-primary"
-                                onclick="handleLink('whatsapp-group')"
+                                onclick="handleLink('whatsapp-channel')"
                             >
-                                Gabung komunitas
+                                Saluran WhatsApp
 
                                 <svg
                                     width="16"
@@ -3358,18 +4012,23 @@
 
                             <div class="profile-image">
                                 <img
-                                    src="https://files.catbox.moe/zxjp1a.jpg"
-                                    alt="Profil SouGPT"
+                                    src="radit-xso.jpg"
+                                    onerror="this.src='https://cdn5.telesco.pe/file/FxRAJrjuYDowFp4K3p9fxhviLoCPmMiuRvX0S_RvdxowDNq2ZLgoV7OyFSiFv7lTaA5T91J8xRLMNSYQ3I6ZhnhNAf_C5yWR3t3a1O0gqokLyFAiAlnWZLa8UIBFBHQs1r8aPrTGRypDUTs4iNbYu8Ymfv6pTfVe4ydUSBZKVx0k7Wi0Pif66LfkdAjN7j4_2Ler7wKUuD4jvODIUfPISpfBH4KhlNuBry6Tr8KvTgfEviAQ5Au0R377AXv7Z4sqth09z14azVNCkB4jP6LqED-RyjtyiHbwyEKQl_wAQPyeDcQoj6MioJk66olYdTFjZCiiZgYKzXmyK0VWuDK70g.jpg'"
+                                    alt="Foto Profil Radit (xso)"
                                 >
                             </div>
 
                             <div>
+                                <div class="owner-pill-badge mono">
+                                    Community Owner
+                                </div>
+
                                 <p class="profile-name">
-                                    SouGPT
+                                    Radit <span class="profile-alias mono">xso</span>
                                 </p>
 
                                 <p class="profile-role">
-                                    Prompt Engineer · Community
+                                    Pemilik Komunitas SouGPT
                                 </p>
                             </div>
 
@@ -3379,6 +4038,35 @@
                             </div>
 
                         </div>
+
+                        <a
+                            class="owner-direct-button"
+                            href="https://t.me/reiisxx"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Akses Telegram Pemilik Radit"
+                        >
+                            <span class="owner-direct-icon">
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path d="m22 2-7 20-4-9-9-4Z"></path>
+                                    <path d="M22 2 11 13"></path>
+                                </svg>
+                            </span>
+
+                            <span class="owner-direct-text">
+                                <strong>Telegram Pemilik · @reiisxx</strong>
+                                <small>t.me/reiisxx · Konsultasi & Kolaborasi</small>
+                            </span>
+
+                            <span class="panel-arrow">↗</span>
+                        </a>
 
                         <div class="panel-label">
                             Community spaces
@@ -3420,7 +4108,7 @@
 
                             <button
                                 class="panel-item"
-                                onclick="handleLink('whatsapp-group')"
+                                onclick="handleLink('xuzobot')"
                             >
                                 <span class="panel-icon">
                                     <svg
@@ -3431,21 +4119,17 @@
                                         stroke="currentColor"
                                         stroke-width="1.8"
                                     >
-                                        <path
-                                            d="M16 21v-2a4 4 0 0 0-4-4H6
-                                               a4 4 0 0 0-4 4v2"
-                                        ></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
-                                        <path
-                                            d="M22 21v-2
-                                               a4 4 0 0 0-3-3.87"
-                                        ></path>
+                                        <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                                        <circle cx="12" cy="5" r="2"></circle>
+                                        <path d="M12 7v4"></path>
+                                        <line x1="8" y1="16" x2="8" y2="16"></line>
+                                        <line x1="16" y1="16" x2="16" y2="16"></line>
                                     </svg>
                                 </span>
 
                                 <span class="panel-item-text">
-                                    <strong>WhatsApp Group</strong>
-                                    <small>Diskusi komunitas</small>
+                                    <strong>XuzoBot</strong>
+                                    <small>Ekosistem & Penjualan</small>
                                 </span>
 
                                 <span class="panel-arrow">↗</span>
@@ -3561,7 +4245,7 @@
 
                         <button
                             class="community-card"
-                            onclick="handleLink('whatsapp-group')"
+                            onclick="handleLink('xuzobot')"
                         >
 
                             <span class="community-number">
@@ -3577,26 +4261,22 @@
                                     stroke="currentColor"
                                     stroke-width="1.8"
                                 >
-                                    <path
-                                        d="M16 21v-2a4 4 0 0 0-4-4H6
-                                           a4 4 0 0 0-4 4v2"
-                                    ></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path
-                                        d="M22 21v-2
-                                           a4 4 0 0 0-3-3.87"
-                                    ></path>
+                                    <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                                    <circle cx="12" cy="5" r="2"></circle>
+                                    <path d="M12 7v4"></path>
+                                    <line x1="8" y1="16" x2="8" y2="16"></line>
+                                    <line x1="16" y1="16" x2="16" y2="16"></line>
                                 </svg>
                             </span>
 
                             <div class="community-bottom">
                                 <div>
                                     <h3>
-                                        WhatsApp Group
+                                        XuzoBot Telegram
                                     </h3>
 
                                     <p>
-                                        Ngobrol, sharing, dan diskusi member.
+                                        Hub ekosistem & penjualan digital.
                                     </p>
                                 </div>
 
@@ -3647,6 +4327,322 @@
                             </div>
 
                         </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section
+                id="xuzobot"
+                class="xuzobot-section"
+            >
+
+                <div class="container">
+
+                    <div class="section-header">
+
+                        <div>
+                            <div class="eyebrow">
+                                Official Telegram Bot
+                            </div>
+
+                            <h2 class="section-title">
+                                Ekosistem XuzoBot.
+                            </h2>
+                        </div>
+
+                        <div class="section-header-side">
+                            Solusi terpadu untuk menghubungkan seluruh ekosistem SouGPT, otomatisasi layanan, distribusi resource, dan transaksi produk digital langsung melalui Telegram.
+                        </div>
+
+                    </div>
+
+                    <div class="xuzobot-card">
+
+                        <div class="xuzobot-showcase">
+
+                            <div class="xuzobot-avatar-wrap">
+                                <img
+                                    src="xuzobot.jpg"
+                                    onerror="this.src='https://cdn5.telesco.pe/file/bY8-rtbtxnapjb8vR6UH_BQaNEPsUZ2veypRpzmU6-_2JgrDijRgxQ4z4usjAQhYRUxM3jQs_5qSJiM8Ui9dfrYLdQp547fWqkOEFXkNFlb4RusXeHlmPFh3X1YgHY5gXZ20r9Zgk_Lc49VESAVs8J5Ex3dVLMHtdzSOeMFpiJRwuHu_SKlddT0XFoX9miFyd5PuZiFCcR-LWnSWpsrYaY6Mja0AXFAr5zgF7k78JKgqIs4Jxs1QgGwY_feYYCDbm9rSNTc4-MhHuKmmWiPG-DTn-vHkeCeduSFFXmJXPawE6p-AA4X_pXmVzw13llIzeKjMUgYDCFHVKTzaVfT02g.jpg'"
+                                    alt="Foto Profil XuzoBot"
+                                    class="xuzobot-avatar"
+                                    width="104"
+                                    height="104"
+                                >
+
+                                <div class="online-indicator bot-online">
+                                    <span class="online-dot"></span>
+                                    Online
+                                </div>
+                            </div>
+
+                            <div class="xuzobot-info">
+
+                                <div class="xuzobot-badge mono">
+                                    SouGPT Ecosystem Bot
+                                </div>
+
+                                <h3 class="xuzobot-name">
+                                    XuzoBot
+                                </h3>
+
+                                <div class="xuzobot-handle mono">
+                                    @pvxsobot
+                                </div>
+
+                                <p class="xuzobot-tagline">
+                                    XuzoBot – 🌐 Your digital ecosystem, built to simplify work and maximize efficiency.
+                                </p>
+
+                            </div>
+
+                            <div class="xuzobot-action">
+
+                                <a
+                                    class="btn xuzobot-btn"
+                                    href="https://t.me/pvxsobot"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <span>Akses XuzoBot (t.me/pvxsobot)</span>
+
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                    >
+                                        <path d="m22 2-7 20-4-9-9-4Z"></path>
+                                        <path d="M22 2 11 13"></path>
+                                    </svg>
+                                </a>
+
+                                <span class="xuzobot-link-note mono">
+                                    t.me/pvxsobot
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="xuzobot-details">
+
+                            <div class="xuzobot-details-header">
+                                <h4>
+                                    Peran & Kegunaan Profesional XuzoBot
+                                </h4>
+
+                                <p>
+                                    XuzoBot beroperasi sebagai infrastruktur otomasi cerdas yang mengintegrasikan layanan SouGPT, memfasilitasi transaksi produk digital secara instan, dan memberikan dukungan interaktif bagi seluruh anggota komunitas.
+                                </p>
+                            </div>
+
+                            <div class="xuzobot-features-grid">
+
+                                <div class="xuzobot-feature-item">
+                                    <span class="feature-number">
+                                        01
+                                    </span>
+
+                                    <div>
+                                        <h5>
+                                            Integrasi Terpusat Ekosistem SouGPT
+                                        </h5>
+
+                                        <p>
+                                            Menghubungkan seluruh repositori prompt, informasi update komunitas, serta dokumentasi eksperimen AI dalam satu antarmuka percakapan interaktif di Telegram yang praktis dan terstruktur.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="xuzobot-feature-item">
+                                    <span class="feature-number">
+                                        02
+                                    </span>
+
+                                    <div>
+                                        <h5>
+                                            Otomatisasi Penjualan Produk Digital
+                                        </h5>
+
+                                        <p>
+                                            Memfasilitasi transaksi instan 24/7 untuk pembelian paket prompt rekayasa tingkat lanjut, template sistem AI, token lisensi, serta aset digital eksklusif SouGPT tanpa hambatan operasional manual.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="xuzobot-feature-item">
+                                    <span class="feature-number">
+                                        03
+                                    </span>
+
+                                    <div>
+                                        <h5>
+                                            Distribusi & Verifikasi Akses Instan
+                                        </h5>
+
+                                        <p>
+                                            Memvalidasi transaksi secara otomatis serta langsung mengirimkan hak akses konten privat, kunci lisensi, atau file digital yang dibutuhkan pengguna secara real-time dan aman.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="xuzobot-feature-item">
+                                    <span class="feature-number">
+                                        04
+                                    </span>
+
+                                    <div>
+                                        <h5>
+                                            Layanan Interaktif & Dukungan Cepat
+                                        </h5>
+
+                                        <p>
+                                            Menyediakan menu navigasi cerdas, panduan pemanfaatan prompt, katalog produk yang selalu terbarui, serta sistem bantuan responsif untuk kenyamanan seluruh pengguna ekosistem.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section
+                id="owner-section"
+                class="owner-section"
+            >
+
+                <div class="container">
+
+                    <div class="section-header">
+
+                        <div>
+                            <div class="eyebrow">
+                                Community Leadership
+                            </div>
+
+                            <h2 class="section-title">
+                                Pemilik Komunitas.
+                            </h2>
+                        </div>
+
+                        <div class="section-header-side">
+                            Mengenal inisiator di balik ekosistem SouGPT yang mendedikasikan eksperimen rekayasa prompt, kurasi repositori AI, dan inovasi automasi digital.
+                        </div>
+
+                    </div>
+
+                    <div class="owner-card">
+
+                        <div class="owner-profile-card">
+
+                            <div class="owner-avatar-wrapper">
+                                <img
+                                    src="radit-xso.jpg"
+                                    onerror="this.src='https://cdn5.telesco.pe/file/FxRAJrjuYDowFp4K3p9fxhviLoCPmMiuRvX0S_RvdxowDNq2ZLgoV7OyFSiFv7lTaA5T91J8xRLMNSYQ3I6ZhnhNAf_C5yWR3t3a1O0gqokLyFAiAlnWZLa8UIBFBHQs1r8aPrTGRypDUTs4iNbYu8Ymfv6pTfVe4ydUSBZKVx0k7Wi0Pif66LfkdAjN7j4_2Ler7wKUuD4jvODIUfPISpfBH4KhlNuBry6Tr8KvTgfEviAQ5Au0R377AXv7Z4sqth09z14azVNCkB4jP6LqED-RyjtyiHbwyEKQl_wAQPyeDcQoj6MioJk66olYdTFjZCiiZgYKzXmyK0VWuDK70g.jpg'"
+                                    alt="Foto Profil Radit (xso)"
+                                    class="owner-avatar-img"
+                                    width="112"
+                                    height="112"
+                                >
+
+                                <div class="online-indicator owner-online">
+                                    <span class="online-dot"></span>
+                                    Founder
+                                </div>
+                            </div>
+
+                            <div class="owner-bio-meta">
+                                <span class="owner-badge mono">
+                                    Founder & Creator
+                                </span>
+
+                                <h3 class="owner-display-name">
+                                    Radit <span class="owner-alias-tag mono">"xso"</span>
+                                </h3>
+
+                                <div class="owner-tg-handle mono">
+                                    @reiisxx
+                                </div>
+
+                                <p class="owner-tagline">
+                                    Pemilik dan perancang utama ekosistem SouGPT. Mengembangkan metodologi prompt engineering terstruktur, pengujian model LLM, serta solusi automasi bot interaktif.
+                                </p>
+                            </div>
+
+                            <div class="owner-action-box">
+                                <a
+                                    class="btn owner-btn"
+                                    href="https://t.me/reiisxx"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <span>Hubungi Radit (t.me/reiisxx)</span>
+
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                    >
+                                        <path d="m22 2-7 20-4-9-9-4Z"></path>
+                                        <path d="M22 2 11 13"></path>
+                                    </svg>
+                                </a>
+
+                                <span class="owner-link-note mono">
+                                    t.me/reiisxx · Akun Resmi Telegram
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="owner-details-grid">
+
+                            <div class="owner-focus-card">
+                                <span class="feature-number">01</span>
+                                <div>
+                                    <h4>Riset & Rekayasa Prompt LLM</h4>
+                                    <p>
+                                        Mempelajari interaksi manusia dan model AI tingkat lanjut, menganalisis respons token, dan merancang formula instruksi yang presisi untuk hasil output optimal.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="owner-focus-card">
+                                <span class="feature-number">02</span>
+                                <div>
+                                    <h4>Pengembangan Ekosistem Digital</h4>
+                                    <p>
+                                        Mengintegrasikan repositori prompt terpusat (Prompt Vault) dan automasi transaksi produk digital via XuzoBot guna mempermudah akses member komunitas secara 24/7.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="owner-focus-card">
+                                <span class="feature-number">03</span>
+                                <div>
+                                    <h4>Kolaborasi & Edukasi Terbuka</h4>
+                                    <p>
+                                        Membuka peluang sinergi, benchmarking model kecerdasan buatan, konsultasi prompt bisnis, serta sesi sharing berkala bagi seluruh antusias AI di komunitas.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
 
                     </div>
 
@@ -4235,11 +5231,14 @@ Notes:
             "whatsapp-channel":
                 "https://whatsapp.com/channel/0029VbBlIDBEquiOKETQXZ1B",
 
-            "whatsapp-group":
-                "https://chat.whatsapp.com/LVr0KB0bctV9DnSJfjbfaB",
-
             "telegram-channel":
-                "https://t.me/qwertytrava"
+                "https://t.me/qwertytrava",
+
+            "xuzobot":
+                "https://t.me/pvxsobot",
+
+            "owner-profile":
+                "https://t.me/reiisxx"
         };
 
         const reducedMotionQuery =
@@ -4560,12 +5559,12 @@ Notes:
                     0
                 ],
                 [
-                    ".section-header, .about-sticky, .about-copy > p, .home-cta-card, .page-header-grid, .prompt-library-card",
+                    ".section-header, .about-sticky, .about-copy > p, .home-cta-card, .page-header-grid, .prompt-library-card, .xuzobot-card, .owner-card",
                     0,
                     70
                 ],
                 [
-                    ".community-card, .feature-row, .article-section",
+                    ".community-card, .feature-row, .article-section, .xuzobot-feature-item, .owner-focus-card",
                     40,
                     85
                 ]
@@ -4697,7 +5696,7 @@ Notes:
 
             const cards =
                 document.querySelectorAll(
-                    ".profile-panel, .community-card, .prompt-library-card, .home-cta-card"
+                    ".profile-panel, .community-card, .prompt-library-card, .home-cta-card, .xuzobot-card, .owner-card"
                 );
 
             cards.forEach(card => {
@@ -4778,7 +5777,7 @@ Notes:
 
             const buttons =
                 document.querySelectorAll(
-                    ".hero-actions .btn, .library-action .btn, .home-cta-card .btn"
+                    ".hero-actions .btn, .library-action .btn, .home-cta-card .btn, .xuzobot-btn, .owner-btn"
                 );
 
             buttons.forEach(button => {
